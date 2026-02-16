@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>KRO PK Beanie — KRO PK</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Permanent+Marker&family=Comic+Neue:wght@700&display=swap  " rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com ">
+<link href="https://fonts.googleapis.com/css2?family=Bangers&family=Permanent+Marker&family=Comic+Neue:wght@700&display=swap " rel="stylesheet">
     <style>
         * {
             margin: 0;
@@ -459,10 +459,10 @@
                 </div>
             </div>
 
-          <a href="https://wa.me/2348151288021?text=Hi%20KRO%20PK  !%20I%20want%20to%20order%20the%20KRO%20PK%20Beanie">
-                ORDER ON WHATSAPP →
+            <a id="orderBtn" class="whatsapp-cta" href="https://wa.me/2348151288021?text=Hi%20KRO%20PK%20!%20I%20want%20to%20order%20the%20KRO%20PK%20Beanie">
+                    ORDER ON WHATSAPP →
             </a>
-            <div class="whatsapp-number">DM @ 08151288021 to cop</div>
+            <div class="whatsapp-number">DM @ 0815128021 to cop</div>
 
             <div class="details-grid">
                 <div class="detail-item">
@@ -528,6 +528,8 @@
         <div style="color: #64748b; font-family: 'Permanent Marker';">KEEP ROCKING © 2026</div>
     </footer>
 
+
+    
     <script>
         let selectedSize = 'ONE SIZE';
 
@@ -540,8 +542,10 @@
             selectedSize = size;
             
             const orderBtn = document.getElementById('orderBtn');
-            const message = `Hi KRO PK! I want to order the KRO PK Beanie`;
-            orderBtn.href = `https://wa.me/2348151288021?text=  ${encodeURIComponent(message)}`;
+            if (orderBtn) {
+                const message = `Hi KRO PK! I want to order the KRO PK Beanie — Size: ${size}`;
+                orderBtn.href = `https://wa.me/2348151288021?text=${encodeURIComponent(message)}`;
+            }
             
             const pop = document.createElement('div');
             pop.style.cssText = 'position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); font-family: Bangers; font-size: 3rem; color: #fbbf24; pointer-events: none; animation: popUp 0.5s ease-out forwards; z-index: 9999;';
@@ -562,4 +566,3 @@
 
 </body>
 </html>
-
